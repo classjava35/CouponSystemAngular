@@ -1,0 +1,57 @@
+<br>
+<h2 style="font-size:10vw" style="font-family:Times New Roman">All Companies</h2>
+
+<div class="wrap">
+    <div class="search">
+  <input class=searchTerm type="text" id="search-bar" onkeyup="myFunction()" placeholder="Search for Companies.." title="Type in a name">
+   </div>
+</div>
+
+<table id="companyTable" border="1" class="blueTable table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+  <tr>
+    <th onclick="sortTable(0)" class="th-sm">Id
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th onclick="sortTable(1)" class="th-sm">Company Name
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th onclick="sortTable(2)" class="th-sm">Password
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th onclick="sortTable(3)" class="th-sm">Email
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th>
+      Update
+    </th>
+    <th>
+      Delete
+    </th>
+  </tr>
+  <!-- foreach Coupon coupon : coupons-->
+  <tr *ngFor="let comp of company; let i = index">
+    <td>{{comp.id}}</td>
+    <td>{{comp.compName}}</td>
+    <td>
+      <input type="text" [(ngModel)]="comp.password" />
+    </td>
+    <td>
+      <input type="email" [(ngModel)]="comp.email" />
+    </td>
+    <td><button id="button" class="button glow-button btn btn-default" (click)="updateCompany(comp.id,comp.compName,comp.password,comp.email)">
+        <i class="fa fa-refresh fa-spin" style="font-size:20px;"></i>
+      </button>
+    </td>
+    <td><button id="button" class="button glow-button btn btn-default" (click)="deleteCompany(comp.id)">&#x2718;</button></td>
+  </tr>
+</table>
+<br>
+<br>
+
+<br>
+<p>
+  <span class="cp-text" style="color:black">
+  © Copyright 2018 Assaf Ben David. All rights reserved.
+</span>
+ <!-- {{companyAdd | json}}-->
+</p>

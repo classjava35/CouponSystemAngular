@@ -1,0 +1,26 @@
+<form #createForm="ngForm">
+  <br>
+  <font size="+2" style="font-size:10vw" style="font-family:Times New Roman">Get Customer</font>
+  
+  
+  
+      <br>
+          <Span style="font-size:10vw" style="font-family:Times New Roman">Search By Customer ID </Span>
+      
+          <div class="form-group">
+              <div *ngIf="fullName?.touched">
+                <div *ngIf="fullName.errors?.required" class="alert">
+                  <font color="red">ID is Required</font>
+                </div>
+              </div>
+                  <input required class=disabled id="myInput" value="1" type="number" name="idtxt" [(ngModel)]="customer.id" #fullName="ngModel" id="idLabel"><br>
+              <button (click)="getCustomerById(customer.id)" 
+                  type="submit" class="button glow-button btn btn-default" [disabled]="createForm.invalid" placeholder="Enter Id">Get
+                  Customer By Id</button>
+          </div>
+      </form>
+      <form>
+      <button class=button (click)="getAllCustomers()"  type="submit"
+          class="button glow-button btn btn-default">Get All Customers</button>
+      <br>
+  </form>

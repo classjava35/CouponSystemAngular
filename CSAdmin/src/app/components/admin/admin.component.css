@@ -1,0 +1,156 @@
+button:hover, h1:hover, a:hover ,select:hover{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+.button{
+  border: 1px solid rgb(99, 189, 250);
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  margin: 10px;
+  height: 40px;
+  border-radius:4px;border:1px solid #AAAAAA;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+.btn{
+    border: 1px solid rgb(99, 189, 250);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin: 10px;
+    height: 40px;
+
+}
+
+.disabled  {
+  border: 1px solid rgb(99, 189, 250);
+  background-color: rgb(53, 50, 50);
+  color: #978e8e;
+  margin: 10px;
+  height: 40px;
+  border-radius:4px;border:1px solid rgb(51, 50, 50);
+  -moz-box-shadow:    inset 0 0 10px #272525;
+  -webkit-box-shadow: inset 0 0 10px #252323;
+  box-shadow:         inset 0 0 10px #3b3a3a;
+}
+
+input{
+ border: 1px solid rgb(99, 189, 250);
+ background-color: rgb(255, 255, 255);
+ width: 100%;
+ text-align: center;
+ border-collapse: collapse;
+ width: 100%; padding:8px;
+   height: 40px;
+   margin: 10px;
+}
+/* *********************************
+           Variables
+  ********************************** */
+  select .lt { text-align:center; 
+    text-align-last:center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+
+ 
+  
+  select{
+    width:230px;
+    text-indent: 5px; 
+    text-align-last:center;
+        dispaly:inline-block;
+    height:40px;
+    border-radius:0;
+    display:block;
+    margin:10px;
+    padding-left:0px;
+    border-radius:4px;border:1px solid #AAAAAA;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+  }
+  
+  
+
+  element.style {
+    background-color: white;
+    }
+  
+  
+  /* *********************************
+     Some Style Overrides on Bootstrap
+    ********************************** */
+
+    .navbar-inverse {
+     background: rgba(62,195,246,0);
+    border-bottom: none;
+  }
+  .navbar-inverse .navbar-toggle {
+    border: 1px solid #e3d9f3;
+    border-color: rgba(13, 10, 202, 0.7);
+  }
+  
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+     border-color: transparent;
+ 
+
+  }
+  .navbar-inverse .navbar-nav > li > a {
+  color: black;
+    
+  
+  }
+  .onclic {
+    color: #22F;
+}
+  .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #22F;
+  }
+
+  
+  /* *********************************
+             Toolbar Logo
+    ********************************** */
+  .small-logo-container {
+      padding-top: navbar-height;
+      height: navbar-height;
+      overflow: hidden;
+    }
+  
+  .small-logo {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: small-logo-padding;
+  }
+  
+  /* *********************************
+             Big Logo
+    ********************************** */
+
+
+  .navbar #logo:hover {
+    background:#ed0121;
+    -webkit-transition:all 0.4s;
+      -moz-transition:all 0.4s;
+      -o-transition:all 0.4s;
+      transition:all 0.4s;
+    
+  }
+  .navbar-inverse .navbar-nav>li>a {
+      -webkit-transition:all 0.4s;
+      -moz-transition:all 0.4s;
+      -o-transition:all 0.4s;
+      transition:all 0.4s;
+      color:white;
+      font-weight:bold;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>.active>a {
+      background:rgba(255,255,255,0.5);
+      color:white;
+      text-shadow:none;
+  }
+  

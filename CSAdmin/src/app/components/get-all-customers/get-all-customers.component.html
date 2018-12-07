@@ -1,0 +1,49 @@
+<br>
+<h2 style="font-size:10vw" style="font-family:Times New Roman">All Customers</h2>
+<div class="wrap">
+    <div class="search">
+  <input class=searchTerm type="text" id="search-bar" onkeyup="myFunction()" placeholder="Search for Customers.." title="Type in a name">
+   </div>
+</div>
+<table id="companyTable" border="1" class="blueTable table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+  <tr>
+    <th onclick="sortTable(0)" class="th-sm">Id
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th onclick="sortTable(1)" class="th-sm">Customer Name
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th onclick="sortTable(2)" class="th-sm">Password
+        <i class="fa fa-sort float-right" aria-hidden="true"></i>      
+    </th>
+    <th>
+      Update
+    </th>
+    <th>
+      Delete
+    </th>
+  </tr>
+  <!-- foreach Coupon coupon : coupons-->
+  <tr *ngFor="let cust of customer; let i = index">
+    <td>{{cust.id}}</td>
+    <td>{{cust.custName}}</td>
+    <td>
+      <input type="text" [(ngModel)]="cust.password" />
+    </td>
+    <td><button id="button" class="button glow-button btn btn-default" (click)="updateCustomer(cust.id,cust.custName,cust.password)">
+        <i class="fa fa-refresh fa-spin" style="font-size:20px;"></i>
+      </button>
+    </td>
+    <td><button id="button" class="button glow-button btn btn-default" (click)="deleteCustomer(cust.id)">&#x2718;</button></td>
+  </tr>
+</table>
+<br>
+<br>
+
+<br>
+<p>
+    <span class="cp-text" style="color:black">
+        © Copyright 2018 Assaf Ben David. All rights reserved.
+      </span>
+ <!-- {{companyAdd | json}}-->
+</p>
